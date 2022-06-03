@@ -35,7 +35,7 @@
 #define CONTROL(c) ((c) & 0x1f)
 
 #ifndef ESC
-#define ESC (27)
+#define ESC (29)
 #endif
 
 #ifndef DEL
@@ -193,6 +193,7 @@ static struct key bindings[] = {
 	{ 'B',            SEL_BMARK },
 	/* Filter */
 	{ '/',            SEL_FLTR },
+	{ CONTROL('S'),   SEL_FLTR },
 	/* Toggle filter mode */
 	{ CONTROL('N'),   SEL_MFLTR },
 	/* Toggle hide .dot files */
@@ -255,7 +256,7 @@ static struct key bindings[] = {
 	{ ';',            SEL_PLUGIN },
 	/* Run command */
 	{ '!',            SEL_SHELL },
-	{ CONTROL(']'),   SEL_SHELL },
+	/* { CONTROL(']'),   SEL_SHELL }, */
 	/* Launcher */
 	{ '=',            SEL_LAUNCH },
 	/* Show command prompt */
