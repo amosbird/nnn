@@ -146,9 +146,9 @@ static struct key bindings[] = {
 	/* Page up */
 	{ KEY_PPAGE,      SEL_PGUP },
 	/* Ctrl+D */
-	{ CONTROL('D'),   SEL_CTRL_D },
+	{ CONTROL('D'),   SEL_DETAIL },
 	/* Ctrl+U */
-	{ CONTROL('U'),   SEL_CTRL_U },
+	{ CONTROL('U'),   SEL_UMOUNT },
 	/* First entry */
 	{ KEY_HOME,       SEL_HOME },
 	{ 'g',            SEL_HOME },
@@ -198,7 +198,7 @@ static struct key bindings[] = {
 	/* Toggle hide .dot files */
 	{ '.',            SEL_HIDDEN },
 	/* Detailed listing */
-	{ 'd',            SEL_DETAIL },
+	{ 'd',            SEL_CTRL_D },
 	/* File details */
 	{ 'f',            SEL_STATS },
 	{ CONTROL('F'),   SEL_STATS },
@@ -244,7 +244,7 @@ static struct key bindings[] = {
 	/* Rename contents of current dir */
 	{ 'r',            SEL_RENAMEMUL },
 	/* Disconnect a SSHFS mount point */
-	{ 'u',            SEL_UMOUNT },
+	{ 'u',            SEL_CTRL_U },
 	/* Show help */
 	{ '?',            SEL_HELP },
 	/* Toggle auto-jump on open */
