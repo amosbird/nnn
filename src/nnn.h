@@ -156,6 +156,7 @@ static struct key bindings[] = {
 	/* Last entry */
 	{ KEY_END,        SEL_END },
 	{ 'G',            SEL_END },
+	{ '$',            SEL_END },
 	{ CONTROL('E'),   SEL_END },
 	/* Go to first file */
 	{ '\'',           SEL_FIRST },
@@ -262,7 +263,7 @@ static struct key bindings[] = {
 	/* Show command prompt */
 	{ ']',            SEL_PROMPT },
 	/* Lock screen */
-	{ '0',            SEL_LOCK },
+	{ '0',            SEL_HOME },
 	/* Manage sessions */
 	{ 's',            SEL_SESSIONS },
 	/* Export list */
